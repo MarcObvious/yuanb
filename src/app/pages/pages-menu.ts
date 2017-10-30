@@ -2,17 +2,27 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'Dashboard',
+    title: 'Ou-Yuan Admin Panel',
     icon: 'nb-home',
     link: '/pages/dashboard',
     home: true,
   },
   {
-    title: 'FEATURES',
+    title: 'ADMIN',
     group: true,
   },
   {
-    title: 'UI Features',
+    title: 'Admin Users',
+    icon: 'nb-person',
+    children: [
+      {
+        title: 'CRUD Users',
+        link: '/pages/tables/smart-table',
+      },
+    ],
+  },
+  {
+    title: 'Admin Orders',
     icon: 'nb-keypad',
     link: '/pages/ui-features',
     children: [
@@ -47,21 +57,21 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
-    title: 'Forms',
+    title: 'Push Notifications',
     icon: 'nb-compose',
     children: [
       {
-        title: 'Form Inputs',
+        title: 'Create Push Notification',
         link: '/pages/forms/inputs',
       },
       {
-        title: 'Form Layouts',
+        title: 'View History',
         link: '/pages/forms/layouts',
       },
     ],
   },
   {
-    title: 'Components',
+    title: 'Payments',
     icon: 'nb-gear',
     children: [
       {
@@ -73,7 +83,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
-  {
+  /*{
     title: 'Maps',
     icon: 'nb-location',
     children: [
@@ -122,17 +132,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/editors/ckeditor',
       },
     ],
-  },
-  {
-    title: 'Tables',
-    icon: 'nb-tables',
-    children: [
-      {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
-      },
-    ],
-  },
+  },*/
   {
     title: 'Auth',
     icon: 'nb-locked',
